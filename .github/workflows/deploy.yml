@@ -24,6 +24,11 @@ jobs:
       - name: Build the project
         run: npm run build
 
+      - name: Generate source maps
+        run: |
+          npx babel --presets env,react --plugins 'transform-react-jsx-source,transform-react-jsx-self,transform-react-jsx-source' --source-maps inline ./src --out-dir ./build/src
+          npx uglifyjs ./build/src/*/*.js --source-map ./build/src/*/*/*.js.map --output ./build/src/*/*.js --screw-ieie
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
