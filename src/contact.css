@@ -1,0 +1,74 @@
+.contact{
+    padding: 2%;
+    text-align: center;
+    background-color: rgba(210, 208, 208, 0.97);
+}
+
+.argu h6{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.argu p{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.rel1,
+.rel2,
+.rel3{
+    color: white;
+    border-radius: 0.50rem;
+    border: 1px solid transparent;
+    font-size: 1.5rem;
+    width: 30%;
+    padding: 1px;
+    text-transform: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.rel1{
+    background-color: rgba(127, 255, 212, 0.497)
+}
+.rel2{
+    background-color: rgba(0, 0, 255, 0.465);
+}
+.rel3{
+    background-color: rgba(0, 128, 0, 0.476); 
+}
+.rel1:hover{
+    color: black;
+    background-color: rgb(111, 154, 185);
+    transform: scale(1.1);
+ }
+.rel2:hover{
+    color: black;
+    background-color: rgb(111, 154, 185);
+    transform: scale(1.1);
+ }
+.rel3:hover{
+    color: black;
+    background-color: rgb(111, 154, 185);
+    transform: scale(1.1);
+ }
+.liaison{
+    display: flex;
+    justify-content: space-between;
+}
+
+.liaison div{
+    cursor: default;
+}
+
+@media(max-width: 796px) {
+    .liaison{
+        flex-direction: column;
+    }
+
+    .rel1,
+    .rel2,
+    .rel3{
+        font-size: 100%;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+}
+   

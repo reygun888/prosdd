@@ -1,0 +1,35 @@
+.propos{
+    display: flex;
+    z-index: -1;
+}
+
+.col-md-4 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+.pics{
+    width: 50%;
+}
+
+.identite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fiche{
+    text-align: center;
+    list-style-type: none;
+}
+
+.fiche span{
+    font-weight: bold;
+}
+
+@media(max-width: 1200px) {
+    .about{
+        z-index: -1;
+    }
+}

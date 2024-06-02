@@ -1,0 +1,31 @@
+.nav-link{
+    transition: transform 0.3s ease;
+    color: white;
+    font-weight: bold;
+}
+.nav-link:hover{
+    transform: scale(1.2);
+    color: black;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.193);
+    z-index: 2;  
+    transition: background-color 0.3s ease;
+}
+
+.navbar.dark-background {
+    background-color: rgba(111, 154, 185, 0.812);
+}
+  
+.navbar-toggler {
+    border: none !important;
+    color: white !important;
+}
+
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+

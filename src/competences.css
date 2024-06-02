@@ -1,0 +1,97 @@
+.competences {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(210, 208, 208, 0.737);
+}
+
+.card-container {
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+.card-about-us {
+    background-color: white;
+    text-align: start;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+.card-about-us:hover {
+    background-color: rgb(111, 154, 185);
+    color: white;
+    transform: translateY(-5px) scale(1.05);
+}
+
+.card-about-us h2 {
+    padding-bottom: 32px;
+}
+
+.card-about-us:hover h2,
+.card-about-us:hover p {
+    color: white;
+}
+
+.detail ul li {
+    display: flex;
+    align-items: center;
+   
+}
+
+.detail .tache li {
+    width: 100%;
+}
+
+.detail ul li i {
+    margin-left: 5%;
+}
+
+.detail .tache li i {
+    margin-left: 2%;
+}
+
+.fas.fa-star,
+.far.fa-star {
+    color: #ffc107;
+}
+
+.fas.fa-star-half-alt {
+    color: #ffc107;
+}
+
+.fas.fa-star+.fas.fa-star-half-alt,
+.fas.fa-star-half-alt+.far.fa-star {
+    color: #ffc107;
+}
+
+.detail span{
+    font-weight: bold;
+}
+
+@media(max-width: 1280px) {
+    .detail ul{
+        font-size: 80%;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+@media(max-width: 1024px) {
+
+    .card-container {
+        width: 95%;
+        margin-bottom: 5%;
+    }
+
+    .detail{
+        margin: 0 !important;
+        flex-direction: column;
+    }
+
+    .detail ul li i{
+        margin-left: 2% !important;
+    }
+}
