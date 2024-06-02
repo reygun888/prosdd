@@ -3,7 +3,7 @@ import './footer.css';
 
 function Footer(){
     const openCv = () => {
-        const url = `${process.env.PUBLIC_URL}file/cv.pdf`;
+        const url = `${process.env.PUBLIC_URL}/file/cv.pdf`;
         const windowFeatures = 'width=800,height=600,scrollbars=yes,resizable=yes';
         window.open(url, windowFeatures);
     };
