@@ -15,7 +15,7 @@ return(
                     <i className="sp fa-solid fa-circle-nodes"></i><span> Conception </span>
                 </div>
         </div>
-    <img src="/img/plan.jpeg" className="presentation" alt="presentaton"/>
+    <img src={`${process.env.PUBLIC_URL}/img/plan.jpeg`} className="presentation" alt="presentaton"/>
     </div>
     </section>
 

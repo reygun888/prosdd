@@ -7,15 +7,14 @@ function Qsj(){
             <div className="propos card">
                 <div className="row g-0">
                     <div className="col-md-4">
-                        <div className='identite'>
-                            <img src="/img/portrait.jpg" alt="About" className="pics img-fluid rounded-start" width="300" height="200" />    
-                            {/* © */}
-                        <div className="fiche">
-                            <p><span>Nom</span>: SAT David</p>
-                            <p><span>Région actuelle</span>: Ile-de-France</p>
-                            <p><span>Hobbies</span>: Padel Tennis, Jeux Vidéo, Moto</p>
-                        </div>
-                        </div> 
+                    <div className='identite'>
+                        <img src={`${process.env.PUBLIC_URL}/img/portrait.jpg`} alt="About" className="pics img-fluid rounded-start" width="300" height="200" />    
+                    <div className="fiche">
+                        <p><span>Nom</span>: SAT David</p>
+                        <p><span>Région actuelle</span>: Ile-de-France</p>
+                        <p><span>Hobbies</span>: Padel Tennis, Jeux Vidéo, Moto</p>
+                    </div>
+                    </div>
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
