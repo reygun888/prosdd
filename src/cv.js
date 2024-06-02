@@ -55,7 +55,7 @@ function Cv() {
   <main className="cv" id='cv-content'>
     <header className='curi'>
       <aside className="enTete">
-        <img className="photo" src="/img/photo.jpg" alt=" portrait" />
+        {/* <img className="photo" src="/img/photo.jpg" alt=" portrait" /> */}
         <ul>
           <li>
             <h5>
