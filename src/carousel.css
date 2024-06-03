@@ -32,10 +32,16 @@
     color: black;
     font-style: italic;
     font-weight: bold;
+    text-shadow: white 0px 54px 55px, white 0px -12px 30px, white 0px 4px 6px, white 0px 12px 13px, white 0px -3px 5px;;
 }
 
 .presentation-container h1 {
     font-size: 6.25vw;
+    text-shadow: rgba(210, 208, 208, 0.737) 0px 54px 55px, rgba(210, 208, 208, 0.737) 0px -12px 30px, rgba(210, 208, 208, 0.737) 0px 4px 6px, white 0px 12px 13px, white 0px -3px 5px;;
+}
+
+.spec span{
+    text-shadow: rgba(210, 208, 208, 0.737) 0px 54px 55px, rgba(210, 208, 208, 0.737) 0px -12px 30px, rgba(210, 208, 208, 0.737) 0px 4px 6px, white 0px 12px 13px, white 0px -3px 5px;;
 }
 
 @keyframes slide-in-left {
