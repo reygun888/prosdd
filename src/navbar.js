@@ -31,9 +31,10 @@ function Navbar() {
     
     const openCv = () => {
         const url = `${process.env.PUBLIC_URL}/file/cv.pdf`;
+        console.log('PUBLIC_URL:', process.env.PUBLIC_URL);
+        console.log('URL:', url);
         const windowFeatures = 'width=800,height=600,scrollbars=yes,resizable=yes';
         window.open(url, windowFeatures);
-        console.log(url);
     };
     
     return (
