@@ -30,7 +30,7 @@ function Navbar() {
     }, []);
     
     const openCv = () => {
-        window.open(`${process.env.PUBLIC_URL}/file/cv.pdf`, '_blank');
+        window.open(`${process.env.PUBLIC_URL}/file/cv2.pdf`, '_blank');
     };
     return (
         <div>
