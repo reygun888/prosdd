@@ -3,12 +3,10 @@ import './footer.css';
 
 function Footer(){
     const openCv = () => {
-        const url = `${process.env.PUBLIC_URL}/file/cv.pdf`;
-        console.log('PUBLIC_URL:', process.env.PUBLIC_URL);
-        console.log('URL:', url);
-        const windowFeatures = 'width=800,height=600,scrollbars=yes,resizable=yes';
-        window.open(url, windowFeatures);
-    };    
+        const cvUrl = `${process.env.PUBLIC_URL}/file/cv.pdf`;
+        console.log('CV URL:', cvUrl);
+        window.open(cvUrl, '_blank');
+    };
     return(
         <section className="footer">
             <div className="links">

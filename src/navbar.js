@@ -30,13 +30,8 @@ function Navbar() {
     }, []);
     
     const openCv = () => {
-        const url = `${process.env.PUBLIC_URL}/file/cv.pdf`;
-        console.log('PUBLIC_URL:', process.env.PUBLIC_URL);
-        console.log('URL:', url);
-        const windowFeatures = 'width=800,height=600,scrollbars=yes,resizable=yes';
-        window.open(url, windowFeatures);
+        window.open(`${process.env.PUBLIC_URL}/file/cv.pdf`, '_blank');
     };
-    
     return (
         <div>
         <nav className={`navbar navbar-expand-lg ${isScrolled ? 'dark-background' : ''}`}>

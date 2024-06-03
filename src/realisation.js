@@ -41,7 +41,7 @@ function Realisation() {
                         <SwiperSlide>
                             <div className="real-card">
                                 <div className='swiper-img'>
-                                    <img src='./img/Gestion.png' alt='gestion' />
+                                    <img src={`${process.env.PUBLIC_URL}/img/Gestion.png`} alt='gestion' />
                                 </div>
                                 <div className='swiper-txt'>
                                     <h2>Gestion RH pour "Ressource Formation"</h2>
@@ -58,7 +58,7 @@ function Realisation() {
                         <SwiperSlide>
                             <div className="real-card">
                                 <div className='swiper-img'>
-                                    <img src='./img/profil.png' alt='monprofil' />
+                                    <img src={`${process.env.PUBLIC_URL}/img/profil.png`} alt='monprofil' />
                                 </div>
                                 <div className='swiper-txt'>
                                     <h2>Site actuel "Mon profil"</h2>
@@ -75,7 +75,7 @@ function Realisation() {
                         <SwiperSlide>
                             <div className="real-card">
                                 <div className='swiper-img'>
-                                    <img src='./img/RF 1.png' alt='securite' />
+                                    <img src={`${process.env.PUBLIC_URL}/img/RF 1.png`} alt='securite' />
                                 </div>
                                 <div className='swiper-txt'>
                                     <h2>Site vitrine pour "Sécurité d'Abord"</h2>
@@ -92,7 +92,7 @@ function Realisation() {
                         <SwiperSlide>
                             <div className="real-card">
                                 <div className='swiper-img'>
-                                    <img src='./img/adm.png' alt='adm' />
+                                    <img src={`${process.env.PUBLIC_URL}/img/adm.png`} alt='adm' />
                                 </div>
                                 <div className='swiper-txt'>
                                     <h2>Site pour l'ONG "Les Amis du Monde"</h2>
