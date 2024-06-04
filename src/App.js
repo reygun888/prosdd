@@ -9,6 +9,7 @@ import Footer from './footer.js';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Cv from './cv';
+import Qr from './qr';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             </>
           } />
           <Route path='/cv' element={<Cv />} />
+          <Route path='/qr' element={<Qr />} />
         </Routes>
       </div>
   );

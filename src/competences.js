@@ -33,7 +33,7 @@ function Competences() {
             <div className="comp card-container ">
             <div className="card-about-us" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div className='spec'>
-                        <i className="sp fa-solid fa-database"></i><span> Back-End </span>
+                        <Link to='/qr' className='secret'><i className="sp fa-solid fa-database"></i></Link><span> Back-End </span>
                     </div>
                     <div className="about-us-p mt-3">
                         <p>Développement de sites web, création et gestion de bases de données, programmation orientée objet, résolution de BUG, mise en ligne.</p>

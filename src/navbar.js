@@ -37,6 +37,7 @@ function Navbar() {
     const location = useLocation();
     // Vérifiez si la page actuelle est la page /cv
     const isCvPage = location.pathname === '/cv';
+    const isQrPage = location.pathname === '/qr';
     return (
         <div>
         <nav className={`navbar navbar-expand-lg ${isScrolled ? 'dark-background' : ''}`}>
@@ -47,7 +48,7 @@ function Navbar() {
                 <div className="dark-background collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div className="navbar-nav text-center">
                         <Link to='/prosdd' className="nav-link" href="#home"><i className="fa-solid fa-house"></i></Link>
-                        {!isCvPage && (
+                        {!isCvPage && !isQrPage && (
                             <>
                         <hr className='navtr'></hr>
                         <a className="nav-link" href="#about">Qui suis-je</a>
