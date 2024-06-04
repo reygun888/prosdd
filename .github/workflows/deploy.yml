@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      REACT_APP_PASSWORD: ${{ secrets.REACT_APP_PASSWORD }}
+      REACT_APP_PASSWORD: ${{ secrets.REACT_APP_PASSWORD }} # Disable warning: Context access might be invalid
 
     steps:
       - name: Checkout repository
