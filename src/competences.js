@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './competences.css';
 
 function Competences() {
@@ -9,7 +10,7 @@ function Competences() {
             <div className="comp card-container">
                 <div className="card-about-us" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div className='spec'>
-                        <i className="sp fa-solid fa-code"></i><span> Front-End </span>
+                    <Link to='/cv'className="secret"><i className="sp fa-solid fa-code"></i></Link><span> Front-End </span>  
                     </div>
                     <div className="about-us-p mt-3">
                         <p>Réalisation et intégration de sites web et mobiles responsive, accessibles et répondant aux normes W3C.</p>
@@ -58,16 +59,16 @@ function Competences() {
                     <div className="about-us-p mt-3">
                         <p>Création, répartition, organisation des differentes étapes, en amont et pendant le développement du site</p>
                         <hr></hr>
-                        <div className='detail d-flex justify-content-between mx-5'>
-                            <ul className='tache'>
+                        <div className='detail d-flex  mx-5'>
+                            <ul className='tache w-100'>
                                 <li>Cahier des charges <i className="ms-5 fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star-half-alt"></i></li>
-                                <li>Diagramme de classNamee <i className="ms-5 fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></li>
+                                <li>Diagramme de classe <i className="ms-5 fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></li>
                                 <li>User Case <i className="ms-5 fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star-half-alt"></i></li>
                                 <li>Évaluation de taches <i className="ms-5 fas fa-star"></i><i className="fas fa-star-half-alt"></i><i className="far fa-star"></i></li>
                                 <li>Organisation des sprints <i className="ms-5 fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></li>
                             </ul>
-                            <ul className='tache'>
-                                <li>Office <i className="ms-5 fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star-half-alt"></i></li>
+                            <ul className='tache w-50'>
+                                <li>Pack Office <i className="ms-5 fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star-half-alt"></i></li>
                                 <li>Figma <i className="ms-5 fas fa-star"></i><i className="fas fa-star"></i><i className="far fa-star"></i></li>
                                 <li>Draw.io <i className="ms-5 fas fa-star"></i><i className="fas fa-star"></i><i className="far fa-star"></i></li>
                                 <li>GitLab <i className="ms-5 fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star-half-alt"></i></li>

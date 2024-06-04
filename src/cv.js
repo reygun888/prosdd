@@ -23,20 +23,6 @@ function Cv() {
       const height = pdf.internal.pageSize.getHeight();
       pdf.addImage(imgData, 'PNG', 0, 0, width, height);
 
-      // Ajout des liens fonctionnels
-      pdf.link(20, 40, 60, 10, { url: 'mailto:david.sat@hotmail.fr' });
-      pdf.link(20, 50, 60, 10, { url: 'https://github.com/reygun888' });
-      pdf.link(20, 60, 60, 10, { url: 'tel:+33612131415' });
-
-      // Liens GitHub
-      pdf.link(20, 150, 60, 10, { url: 'https://github.com/reygun888/Security.git' });
-      pdf.link(20, 200, 60, 10, { url: 'https://github.com/reygun888/GestionRH.git' });
-      pdf.link(20, 250, 60, 10, { url: 'https://github.com/reygun888/cv.git' });
-
-      // Liens site internet
-      pdf.link(20, 100, 60, 10, { url: 'https://reygun888.github.io/security/' });
-      pdf.link(20, 220, 60, 10, { url: 'https://reygun888.github.io/cv/' });
-
       // Réinsérer le bouton de génération du PDF dans le DOM
       parentNode.insertBefore(pdfButton, null);
 
@@ -44,7 +30,6 @@ function Cv() {
     })
     .catch((error)=>{
       console.error('Erreur lors de la génération du fichier');
-
       // Réinsérer le bouton de génération du PDF dans le DOM en cas d'erreur
       parentNode.insertBefore(pdfButton, null);
     });
@@ -55,7 +40,7 @@ function Cv() {
   <main className="cv" id='cv-content'>
     <header className='curi'>
       <aside className="enTete">
-        <img className="photo" src="/img/photo.jpg" alt=" portrait" />
+        {/* <img className="photo" src="/img/photo.jpg" alt=" portrait" /> */}
         <ul>
           <li>
             <h5>
@@ -78,6 +63,11 @@ function Cv() {
               <a className='cvlien' href="https://github.com/reygun888">
                 <i className="fa-brands fa-github"></i>
                 <span className='ms-1'>https://github.com/reygun888</span>
+              </a>
+              <br></br>
+              <a className='cvlien mt-3' href="https://reygun888.github.io/prosdd/">
+                <i class="fa-brands fa-internet-explorer"></i>
+                <span className='net ms-1'>https://reygun888.github.io/prosdd</span>
               </a>
             </div>
           </li>
@@ -111,6 +101,17 @@ function Cv() {
 <li>- Conception UML, cahier des charges</li>
 </div>
 </div>
+</li>
+<li>
+    <div className='competence'>
+      <h5>SAVOIR-ÊTRE</h5>
+    <div className='contact'>
+      <li>- Adaptabilité</li>
+      <li>- Collaboration</li>
+      <li>- Organisation</li>
+      <li>- Rigueur</li>
+    </div>
+    </div>
 </li>
 <li>
   <h5>
@@ -199,23 +200,22 @@ function Cv() {
     </hr>
   </div>
   <div className='pre my-3'>
-    <h3>• Création d'un site pour afficher un document</h3>
+  <h3>•	Création d'un site pour afficher mon profil</h3>
     <ul className='desc my-3'>
-      <li className='mb-4'>
-        <a className='cvlien' href="https://reygun888.github.io/cv/">
+      <li className='mb-4'> 
+          <a className='cvlien' href="https://reygun888.github.io/prosdd/">
           <i class="fa-brands fa-internet-explorer"></i>
-          <span> https://reygun888.github.io/cv/ (Mot de passe: cv)</span>
-        </a>
+          <span> https://reygun888.github.io/prosdd/</span>
+          </a>
       </li>
-      <li>- Élaboration d'un site dynamique avec la bibliothèque 'REACT'</li>
-      <li>- Accès au document via un mot de passe (J'ai pris un CV comme exemple)</li>
-      <li>- Pouvoir générer un PDF</li>
-      <li>- Rendre le site responsif sur divers supports</li>
-      <li>- Déploiement du site via GitHub</li>
+      <li>-	Élaboration d'un site dynamique avec la bibliothèque 'REACT'</li>
+      <li>-	Utilisation de divers API (AOS, Swiper, ...)</li>
+      <li>-	Rendre le site responsif sur divers supports</li>
+      <li>-	Déploiement du site via GitHub</li>
       <li className='my-3'>
-        <a className='cvlien' href="https://github.com/reygun888/cv.git">
-          <i className="fa-brands fa-github"></i>
-          <span> https://github.com/reygun888/cv.git</span>
+        <a className='cvlien' href="https://github.com/reygun888/prosdd.git">
+        <i className="fa-brands fa-github"></i>
+        <span> https://github.com/reygun888/prosdd.git</span>
         </a>
       </li>
     </ul>

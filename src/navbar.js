@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './navbar.css';
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 function Navbar() {
     document.addEventListener('DOMContentLoaded', () => {
@@ -32,6 +34,9 @@ function Navbar() {
     const openCv = () => {
         window.open(`${process.env.PUBLIC_URL}/file/cv2.pdf`, '_blank');
     };
+    const location = useLocation();
+    // Vérifiez si la page actuelle est la page /cv
+    const isCvPage = location.pathname === '/cv';
     return (
         <div>
         <nav className={`navbar navbar-expand-lg ${isScrolled ? 'dark-background' : ''}`}>
@@ -41,7 +46,9 @@ function Navbar() {
                 </button>
                 <div className="dark-background collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div className="navbar-nav text-center">
-                        <a className="nav-link" href="#home"><i className="fa-solid fa-house"></i></a>
+                        <Link to='/prosdd' className="nav-link" href="#home"><i className="fa-solid fa-house"></i></Link>
+                        {!isCvPage && (
+                            <>
                         <hr className='navtr'></hr>
                         <a className="nav-link" href="#about">Qui suis-je</a>
                         <hr className='navtr'></hr>
@@ -52,6 +59,8 @@ function Navbar() {
                         <a className="nav-link" href="#contact">Contact</a>
                         <hr className='navtr'></hr>
                         <button className="nav-link" onClick={openCv} style={{ cursor: 'pointer' }}>Mon CV</button>
+                            </>
+                        )}  
                     </div>
                 </div>
             </div>

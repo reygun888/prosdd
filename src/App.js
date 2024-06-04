@@ -7,24 +7,33 @@ import Realisation from './realisation';
 import Contact from './contact.js';
 import Footer from './footer.js';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Cv from './cv';
 
 function App() {
   return (
-    <div id='home'>
+      <div id='home'>
         <header className="App-header">
           <Navbar />
-          <Carousel />
         </header>
-        <main>
-          <Qsj />
-          <Competences />
-          <Realisation />
-          <Contact />
-        </main>
-        <footer>
-          <Footer />
-        </footer>
-    </div>
+        <Routes>
+          <Route path='/prosdd' element={
+            <>
+              <main>
+                <Carousel />
+                <Qsj />
+                <Competences />
+                <Realisation />
+                <Contact />
+              </main>
+              <footer>
+                <Footer />
+              </footer>
+            </>
+          } />
+          <Route path='/cv' element={<Cv />} />
+        </Routes>
+      </div>
   );
 }
 
