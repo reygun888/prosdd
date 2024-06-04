@@ -1,9 +1,22 @@
-import React from 'react';
+import { useState} from 'react';
 import { jsPDF } from 'jspdf';
 import html2canvas from 'html2canvas';
 import './cv.css';
 
 function Cv() {
+  const [password, setPassword] = useState('');
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const correctPassword = process.env.REACT_APP_PASSWORD;
+
+    if (password === correctPassword){
+      setIsAuthenticated(true);
+    }else{
+      alert('Mot de passe incorrect');
+    }
+  };
 
   const generatePDF = () => {
     const confirmed = window.confirm('Voulez-vous vraiment générer le PDF ?');
@@ -37,6 +50,7 @@ function Cv() {
 
   return (
 <div className='App'>
+{isAuthenticated ? (
   <main className="cv" id='cv-content'>
     <header className='curi'>
       <aside className="enTete">
@@ -240,6 +254,21 @@ function Cv() {
   </div>
 </section>
 </main>
+ ) : (
+  <main className="champs">
+    <section className='connect'>
+      <header>
+        <h2 className='mb-5'>Bienvenue</h2>
+      </header>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <input type='password' id='password' placeholder='Mot de passe' value={password} onChange={(e) => setPassword(e.target.value)}/>
+          </div>
+          <button type='submit' className='btn btn-primary my-3'>Valider</button>
+        </form>
+    </section>
+  </main>
+ )}
 </div>
 );
 }
