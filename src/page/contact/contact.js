@@ -5,12 +5,10 @@ function Contact(){
     
     return(
         <section className="contacts" id="contact">
-            <div className="">
-                <h2>Contact</h2>
-            </div>
+            <h2 className="tReal">Contact</h2>
             <br></br>
             <div className="argu">
-                <p>Ma page de profil vous à plu ? Vous souhaitez me connaitre d'avantage ?</p>
+                <p>Ma page de profil vous a plu ? Vous souhaitez me connaitre d'avantage ?</p>
                 <h6>Alors n'hesitez pas à consulter mon CV pour plus de détails ou bien me contacter directement pour une mise en relation.</h6>
             </div>
             <div className="liaison my-5">

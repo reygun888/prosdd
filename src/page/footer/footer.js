@@ -10,10 +10,10 @@ function Footer(){
     return(
         <section className="footer">
             <div className="links">
-            <a className='' href="https://github.com/reygun888">
+            <a href="https://github.com/reygun888">
                 <i className="fa-brands fa-github"></i>
             </a>
-            <a className='' href="https://www.linkedin.com/in/david-sat-9b715a30b">
+            <a href="https://www.linkedin.com/in/david-sat-9b715a30b">
                 <i className="fa-brands fa-linkedin mx-3"></i>
             </a>
             <p className="print" onClick={openCv} style={{ cursor: 'pointer' }}>

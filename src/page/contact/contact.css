@@ -70,5 +70,11 @@
         width: 100%;
         margin-bottom: 2%;
     }
+    .argu h6{
+        font-size: 1rem;
+    }
+    .argu p{
+        font-size: 1rem;
+    }
 }
    

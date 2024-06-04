@@ -70,14 +70,16 @@
 .detail span{
     font-weight: bold;
 }
-.secret{
+
+.secret,
+.sp2 {
+    font-size: 2rem;
+    background-color: rgb(111, 154, 185);
+    padding: 10px;
+    border-radius: 30px;
     transition: transform 0.3s ease;
     color: white;
     font-weight: bold;
-}
-.secret:hover{
-    transform: scale(1.2);
-    color: white;
 }
 
 @media(max-width: 1280px) {
@@ -102,5 +104,12 @@
 
     .detail ul li i{
         margin-left: 2% !important;
+    }
+
+    .secret,
+    .sp2 {
+        padding: 5px;
+        font-size: 1rem;
+        margin: 0;
     }
 }

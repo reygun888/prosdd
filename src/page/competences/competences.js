@@ -6,11 +6,11 @@ function Competences() {
 
     return (
         <section className="competences" id='competences'>
-            <h2 className='text-center my-5'>Mes Compétences</h2>
+            <h2 className='tReal text-center my-5'>Mes Compétences</h2>
             <div className="comp card-container">
                 <div className="card-about-us" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div className='spec'>
-                    <Link to='/cv'className="secret"><i className="sp fa-solid fa-code"></i></Link><span> Front-End </span>  
+                    <Link to='/cv'className="secret"><i className="sp1 fa-solid fa-code"></i></Link><span> Front-End </span>  
                     </div>
                     <div className="about-us-p mt-3">
                         <p>Réalisation et intégration de sites web et mobiles responsive, accessibles et répondant aux normes W3C.</p>
@@ -33,7 +33,7 @@ function Competences() {
             <div className="comp card-container ">
             <div className="card-about-us" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div className='spec'>
-                        <Link to='/qr' className='secret'><i className="sp fa-solid fa-database"></i></Link><span> Back-End </span>
+                        <i className="sp2 fa-solid fa-database"></i><span> Back-End </span>
                     </div>
                     <div className="about-us-p mt-3">
                         <p>Développement de sites web, création et gestion de bases de données, programmation orientée objet, résolution de BUG, mise en ligne.</p>
@@ -54,7 +54,7 @@ function Competences() {
             <div className="comp card-container ">
                  <div className="card-about-us" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div className='spec'>
-                        <i className="sp fa-solid fa-circle-nodes"></i><span> Conception </span>
+                        <Link to='/qr' className='secret'><i className="sp1 fa-solid fa-circle-nodes"></i></Link><span> Conception </span>
                     </div>
                     <div className="about-us-p mt-3">
                         <p>Création, répartition, organisation des differentes étapes, en amont et pendant le développement du site</p>
@@ -81,7 +81,7 @@ function Competences() {
             <div className="comp card-container ">
                  <div className="card-about-us" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div className='spec'>
-                        <i className="sp fa-solid fa-mug-saucer"></i><span> Environnement de Travail </span>
+                        <i className="sp2 fa-solid fa-mug-saucer"></i><span> Environnement de Travail </span>
                     </div>
                     <div className="about-us-p mt-3">
                         <div className='detail'>

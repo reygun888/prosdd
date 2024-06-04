@@ -10,7 +10,7 @@ function Realisation() {
     return (
         <section className='realisation' id='realisation'>
             <div className="container">
-                <h2 className='text-center mb-5'>Mes réalisations</h2>
+                <h2 className='tReal text-center mb-5'>Mes réalisations</h2>
                 <div className='real-container'>
                     <Swiper
                         effect={'coverflow'}
@@ -44,7 +44,7 @@ function Realisation() {
                                     <img src={`${process.env.PUBLIC_URL}/img/Gestion.png`} alt='gestion' />
                                 </div>
                                 <div className='swiper-txt'>
-                                    <h2>Gestion RH pour "Ressource Formation"</h2>
+                                    <h3 className='nReal'>Gestion RH pour "Ressource Formation"</h3>
                                     <p>Application web fermée, d’un gestionnaire de personnel pour divers évènements (absences, congé, ...).
                                     </p>
                                 </div>
@@ -61,7 +61,7 @@ function Realisation() {
                                     <img src={`${process.env.PUBLIC_URL}/img/profil.png`} alt='monprofil' />
                                 </div>
                                 <div className='swiper-txt'>
-                                    <h2>Site actuel "Mon profil"</h2>
+                                    <h3 className='nReal'>Site actuel "Mon profil"</h3>
                                     <p>Site personnaliser qui permet d'étendre la visibilité via le WEB, donne un moyen de communication supplémentaire et de montrer un savoir-faire.
                                     </p>
                                 </div>
@@ -78,7 +78,7 @@ function Realisation() {
                                     <img src={`${process.env.PUBLIC_URL}/img/RF 1.png`} alt='securite' />
                                 </div>
                                 <div className='swiper-txt'>
-                                    <h2>Site vitrine pour "Sécurité d'Abord"</h2>
+                                    <h3 className='nReal'>Site vitrine pour "Sécurité d'Abord"</h3>
                                     <p>Création d'un site pour mettre en avant les atouts de l'entreprise "Sécurité d'Abord" avec un déploiement pour une présentation en situation réelle.
                                     </p>
                                 </div>
@@ -95,7 +95,7 @@ function Realisation() {
                                     <img src={`${process.env.PUBLIC_URL}/img/adm.png`} alt='adm' />
                                 </div>
                                 <div className='swiper-txt'>
-                                    <h2>Site pour l'ONG "Les Amis du Monde"</h2>
+                                    <h3 className='nReal'>Site pour l'ONG "Les Amis du Monde"</h3>
                                     <p>Création d'un site pour l'ONG "Les Amis de Monde" avec différentes catégories d'adhérents, des dons,...</p>
                                 </div>
                                 <div className='techU'>

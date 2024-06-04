@@ -38,9 +38,10 @@
   color: black;
 }
 
-.real-card h2{
+.real-card .nReal{
     color: rgb(111, 154, 185);
     font-style: italic;
+    font-weight: bold;
 }
 
 .real-container{
@@ -261,7 +262,16 @@
 
   @media(max-width: 768px) {
 .techU {
-    font-size: 80%;  
+    font-size: 50%;  
+}
+.tReal{
+  font-size: 35px;
+}
+.nReal{
+  font-size: 20px;
+}
+.real-card .swiper-txt{
+  font-size: 60%;
 }
 } 
 
