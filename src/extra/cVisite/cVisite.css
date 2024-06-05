@@ -1,0 +1,30 @@
+.cVisite{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fVisite{
+    margin: 60px 10px 10px 10px;
+}
+
+.fCarte img{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 1004px;
+    height: 650px;
+    border-radius: 10px;
+}
+
+@media(max-width: 1200px) {
+    .fCarte img{
+        width: 100%;
+        height: 100%;
+    }
+}

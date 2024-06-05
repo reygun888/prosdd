@@ -10,6 +10,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Cv from './extra/cv/cv.js';
 import Qr from './extra/qr/qr.js';
+import CVisite from './extra/cVisite/cVisite.js'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         } />
         <Route path='/cv' element={<Cv />} />
         <Route path='/qr' element={<Qr />} />
+        <Route path='/cVisite' element={<CVisite />} />
       </Routes>
     </div>
   );

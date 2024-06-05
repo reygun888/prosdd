@@ -81,7 +81,7 @@ function Competences() {
             <div className="comp card-container ">
                  <div className="card-about-us" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div className='spec'>
-                        <i className="sp2 fa-solid fa-mug-saucer"></i><span> Environnement de Travail </span>
+                    <Link to='/cVisite' className='secret'><i className="sp fa-solid fa-mug-saucer"></i></Link><span> Environnement de Travail </span>
                     </div>
                     <div className="about-us-p mt-3">
                         <div className='detail'>
