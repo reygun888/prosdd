@@ -3,7 +3,7 @@ import './footer.css';
 
 function Footer(){
     const openCv = () => {
-        const cvUrl = `${process.env.PUBLIC_URL}/file/cvQr.pdf`;
+        const cvUrl = `${process.env.PUBLIC_URL}/file/cvDev.pdf`;
         console.log('CV URL:', cvUrl);
         window.open(cvUrl, '_blank');
     };

@@ -32,7 +32,7 @@ function Navbar() {
     }, []);
     
     const openCv = () => {
-        window.open(`${process.env.PUBLIC_URL}/file/cvQr.pdf`, '_blank');
+        window.open(`${process.env.PUBLIC_URL}/file/cvDev.pdf`, '_blank');
     };
     const location = useLocation();
     // Vérifiez si la page actuelle est la page /cv
